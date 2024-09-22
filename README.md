@@ -8,14 +8,15 @@ Composer
 MySQL atau database lain yang kompatibel
 
 1. Clone Repository
-
-2. Install Dependensi PHP
+    https://github.com/Ajisampurno/tes-kerja-diskominfo.git
+   
+3. Install Dependensi PHP
     composer install
 
-3. Konfigurasi Environment
+4. Konfigurasi Environment
     cp .env.example .env
 
-4. Edit file .env
+5. Edit file .env
     contoh:
     DB_CONNECTION=mysql
     DB_HOST=127.0.0.1
@@ -24,14 +25,14 @@ MySQL atau database lain yang kompatibel
     DB_USERNAME=root
     DB_PASSWORD=
 
-5. Generate Key Aplikasi
+6. Generate Key Aplikasi
     php artisan key:generate
 
-6. Jalankan Migration dan Seeder
+7. Jalankan Migration dan Seeder
     php artisan migrate --seed
 
-7. Jalankan Server Lokal
+8. Jalankan Server Lokal
     php artisan serve
 
-8. Menjalankan Seeder Lagi (Opsional)
+9. Menjalankan Seeder Lagi (Opsional)
     php artisan migrate:refresh --seed
